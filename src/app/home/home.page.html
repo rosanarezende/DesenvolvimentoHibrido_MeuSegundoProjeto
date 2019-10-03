@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+      <ion-list *ngFor="let elemento of lista">
+        <ion-item>
+          <ion-label>{{elemento}}</ion-label>
+        </ion-item>  
+      </ion-list>
+
+
+    <ion-button *ngIf="flag==true" expand="full" (click)="teste()" routerLink="/login">Meu botão</ion-button>
+  </div>
+</ion-content>
